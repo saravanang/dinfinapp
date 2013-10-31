@@ -1,0 +1,144 @@
+package login;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.Timestamp;
+import java.sql.DriverManager;
+import java.util.Enumeration;
+import java.util.Date;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import validate.UserInfo;
+import beans.LoginDetails;
+import database.DatabaseManager;
+import database.FetchMenu;
+import beans.MenuCategory;
+import common.ErrorMessages;
+
+
+
+/**
+ * Servlet implementation class LoginInfo
+ */
+//@WebServlet(name = "login", urlPatterns = { "/login" })
+public class LoginInfo_Old extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	/*
+	// Create a new instance for the class DatabaseManager
+	private DatabaseManager databaseManager = new DatabaseManager();
+	private FetchMenu fetchmenu = new FetchMenu();
+	private UserInfo val = new UserInfo();
+	private ErrorMessages getErrorMsg = new ErrorMessages();
+ 	private int userval = 0;
+	private String strError = null;
+	public Connection dbconn = null;
+	
+    public void init(ServletConfig config) throws ServletException {
+		super.init(config);
+				
+		// set the database details
+		databaseManager.setdbURL(config.getInitParameter("dbURL"));
+		databaseManager.setdbUser(config.getInitParameter("dbUser"));
+		databaseManager.setdbPasswd(config.getInitParameter("dbPasswd"));
+		try {
+			// Load database driver
+			Class.forName(config.getInitParameter("jdbcDriver"));
+			System.out.println("Database driver loaded successfully");
+			dbconn = databaseManager.getConnection();
+	
+		} catch (Exception e) {
+			System.out.println("Error: Loading database driver " + e);
+			strError = "Error: Loading database driver " + e;
+			e.printStackTrace();
+		}
+}
+		
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		//DatabaseManager dataManager = new DatabaseManager();
+		boolean login = false;
+		HttpSession session = request.getSession(true);
+				
+		String usrname = request.getParameter("userID");
+		String usrpasswd = request.getParameter("usrpasswd");
+		
+		LoginDetails logininfo = new LoginDetails();
+		userval = val.usrvalidation(usrname,usrpasswd); 
+		
+		if(userval == 0) {
+			logininfo = databaseManager.getLoginDetls(usrname, usrpasswd, dbconn);	
+			if(dbconn == null){
+				strError = getErrorMsg.GetErrorMessages(201);
+			}
+			try {
+				if (logininfo.getLi_userid() > 0) {
+					login = true;
+					System.out.println("User ID is:" + logininfo.getLi_userid());
+					System.out.println("Password:" + logininfo.getLi_password());
+					System.out.println("Last Login time:" +logininfo.getLi_lastlogin());
+				} else {
+					strError = getErrorMsg.GetErrorMessages(103);					
+				}
+			} catch (NullPointerException npe) {
+				System.out.println("Error in DB login value return");
+				npe.printStackTrace();
+				strError = "Unable to validate the User ID, Pls. try again later";
+				System.out.println("The Error value is " + strError);
+				login = false;
+				databaseManager.disconnectDB(dbconn);				
+			}
+		} else {
+			System.out.println("The error message value is" + userval);
+			strError = getErrorMsg.GetErrorMessages(userval);
+			login = false;			
+		}
+		
+		if(login) {
+			// Redirect the page to Welcome screen only if the user ID is valid
+			session.setAttribute("userid",usrname);
+			request.setAttribute("logindetails", logininfo);
+			session.setAttribute("error", null);
+			databaseManager.setLoginDetls(usrname, dbconn);
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/layout1.jsp");
+			dispatcher.forward(request,response);			
+			
+		} else {			
+			session.setAttribute("error", strError);
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
+			dispatcher.forward(request, response);
+		}
+	}
+	
+	//@Override
+	public void destroy() {
+		super.destroy();
+		
+		String prefix = getClass().getSimpleName() + "destroy ()";
+		ServletContext srvctx = getServletContext();
+		
+		if( dbconn != null) {
+			databaseManager.disconnectDB(dbconn);
+			System.out.println("Disconnected the database in Servlet Destroy function");
+		}
+		try {
+			Enumeration<java.sql.Driver> drivers = DriverManager.getDrivers();
+			
+			while(drivers.hasMoreElements()) {
+				DriverManager.deregisterDriver(drivers.nextElement());
+			}
+			
+		} catch (Exception e) {
+			srvctx.log(prefix + "Exception caught while deregistering JDBC drivers", e);
+		}
+		srvctx.log("Complete");
+	} */
+}
