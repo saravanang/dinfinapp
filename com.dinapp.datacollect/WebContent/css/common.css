@@ -1,0 +1,339 @@
+@CHARSET "ISO-8859-1";
+
+@font-face {
+	font-family: 'Kneware';
+	src: url('../font/Knewave.eot'); /* IE9 Compat Modes */
+	src: url('../font/Knewave.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../font/Knewave.woff') format('woff'), /* Modern Browsers */
+	     url('../font/Knewave.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('Knewave.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+	margin: 0; padding: 0;
+	//font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+	font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;
+	font-size: 12px;
+	color: #333;
+	letter-spacing: 0.01em;
+	background-color:#16256C
+}
+
+#container {
+	width: 100%;
+}
+
+#container form
+{
+  margin: 0px auto; 
+}
+
+.holder {
+	width: 1200px;
+	//margin: 0px auto;
+}
+
+#header {
+	background: #fff url(../img/header.png) repeat-x;
+	height: 136px;
+	//border-bottom: 10px solid #83af0e;
+	border-bottom: 10px solid #16256C;	
+	width: 1200px;
+	margin: 0px auto;
+	letter-spacing: 0.01em;
+	background-color:#fff
+}
+
+#header-top {
+    list-style-type: none;
+    margin: -50px 0px 0px;
+}
+
+#header-top li{
+    font-weight:bold;
+    font-size:110%;
+}
+
+#header-top label{
+	font-weight:none;
+	font-size:95%;
+}
+
+.header-top-nav-right {
+    font-family: "Lucida Sans",Arial,Helvetica,sans-serif;
+    letter-spacing: 0.01em;
+    color: #16256C;
+	font-size:12px;
+	float:right;
+	margin:0px 0px 0px 0px;
+}
+
+.header-top-nav-main {
+    font-family: "Lucida Sans",Arial,Helvetica,sans-serif;
+    letter-spacing: 0.01em;
+    color: #16256C;
+	font-size:12px;
+	text-align:right;
+	float:left;
+	margin: 0px 0px 0px 0px;
+	padding-left: 0px 0px 0px 0px;
+}
+
+#menu-top {
+	list-style-type: none;
+	margin: 0px 0px 0px;
+	padding-left: 25px 0px 0px 0px;
+	float: left;
+	//background-color:#a5e3ff
+}		
+		#menu-top li {
+			padding: 0px;
+			margin: 0px;
+			float: left;
+		}
+		#menu-top li a {
+			padding-top: 4px;
+			float: left;
+			background: url(../img/tab_blue.png) no-repeat top center;
+			margin-right: 4px;
+			height: 33px;
+			line-height: 33px;
+			color: #fff;
+			font-size: 14px;
+			text-decoration: none;
+			text-align: center;
+			width: 140px;
+			font-weight: bold;
+		}
+		#menu-top li a:hover,#menu-top li.section a {
+			background: url(../img/tab_blue_selected.png) no-repeat top center;
+			color: #fff;
+			height: 33px;
+			//font-weight: bold;
+		}		
+a img {
+	float: left;
+	color: #fff !important;
+	border: none !important;
+}
+
+ /*.logo-img {
+ 	display: block;
+ 	text-indent: -9999px;
+    background: url("../../img/dinapp-logo.svg"");
+    width: 100px;
+    height: 82px;
+    background-size: 100px 82px;    
+}	*/	
+
+#error-login {
+	position:auto;
+	text-align:center;
+	color:#FF0000;
+	font-weight:bold;
+	font-style:italic;	
+}
+
+#body-header {
+    //background: url("../img/body-backgrd.png") repeat-x scroll 0% 0% transparent;
+    height: auto;
+    width: 1200px;
+	margin: 0 auto;
+	background-color:#fff
+}
+
+.body_content {
+	width: 620px;
+	float: left;
+	color: #393939;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.body_content a {
+	color: #10679f;
+}
+
+.body_content h1 {
+	font-size: 22px;
+	color: #5c9300;
+	margin: 0px 0px 10px 0px;
+}
+
+.body_content h2 {
+	font-size: 20px;
+	color: #5c9300;
+	font-weight: normal;
+	margin: 0px 0px 10px 0px;
+}
+
+.body_content h3 {
+	font-size: 18px;
+	font-weight: normal;
+	margin-top: 20px;
+}
+
+.body_content h4 {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 22px;
+}
+.body_content h4 span {
+	font-weight: bold;
+	color: #5c9300;
+}
+
+#page-header {
+	padding-top:10px;
+	padding-left:5px;  
+	//float: left;
+	font-weight: bold;
+	color:#16256C;
+	font-size: 20px;
+	text-align:left;
+}
+
+#section-sep {
+	width: 100%;
+	//background: #83af0e;
+	background: #16256C;
+	padding-left:10px;
+	font-weight: bold;
+	margin-left: -30px;
+	//color:#16256C;
+	color:#fff;
+	font-size:14px;
+}
+
+fieldset {
+	//border-color: #83af0e;
+	border-color: #16256C; 
+	border-radius: 10px 10px 10px 10px;
+	margin-bottom: 13px;
+	padding-bottom: 13px;	
+}
+
+.marginleft {
+	margin-left: -30px;
+	float: none;
+}
+
+#login-form {
+	-webkit-box-shadow: 0 0 0px 1px #34495e;
+    -moz-box-shadow: 0 0 0px 1px #34495e;
+    //box-shadow: 0 0 0px 1px #34495e;
+    margin: 1em 0;    
+    height: auto;
+    float: left;
+    /*border-radius*/
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px 6px 6px 6px;    
+}
+
+input.text,input.search,input.file,textarea.textarea,select.select {
+	font-family:"Lucida Grande", Tahoma, Arial, sans-serif;
+	font-size:100%;
+	color:#333;
+	margin:0;
+	padding:2px 0;
+}
+
+td {
+	padding: 5px;
+	border-radius: 2px 2px 2px 2px;	
+}
+
+.loginbox {
+	overflow: hidden; 
+	border: 1px solid #dddddd; 
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	border-radius: 10px;
+	margin-bottom: 20px; 
+	margin-left: 450px; 
+	margin-right: 2px; 
+	margin-top: 20px;
+	//box-shadow: 0px 5px 10px #b4cf6e;
+	box-shadow: 0px 5px 10px #16256C;
+	width: 22%; 
+	//-moz-box-shadow: 0px 5px 10px #16256C; 
+	-moz-box-shadow: 0px 5px 10px #484a4a;
+	//-webkit-box-shadow: 0px 5px 10px #b4cf6e;
+	-webkit-box-shadow: 0px 5px 10px #16256C;
+}
+
+.loginbox h5 {
+    background: 0% 0% #dddddd;
+    padding: 3px 10px;
+    margin-top: 0px;    
+}
+
+.comadd {
+	text-align:right;
+	margin-top:0px;
+	padding: 1px;
+	list-style-type: none;
+	//color:#83af0e;
+	color:#16256C;
+}
+
+.comadd_hdr {
+	font-size:16px;
+	//color:#83af0e;
+	color:#16256C;
+	font-weight:bold;
+}
+.comtitleh1 {
+	margin-top: 0px;
+	text-align: left;
+	margin-right: 0px;
+	padding-top: 0px 0px 0px;
+	//font-family:'Knewave',Arial,Tahoma,sans-serif;
+	font-family:Knewave;
+	letter-spacing:.01em;
+	width:475px;
+}
+h5 {
+    font-size: 13.5px;
+    margin-top: 4.5px;
+}
+h1, h3, h4, h5 {
+    font-weight: bold;
+    //color: #83af0e;
+    color:#16256C;
+}
+.form label{
+	font-family:"Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+	letter-spacing:.01em
+}
+.container div {
+	clear:both !important;
+	float:none !important;
+	margin: 0px !important;
+	padding: 0px !important;
+	width: 100% !important;
+	text-align: left !important;
+	display: block !important;
+}
+.singleRow
+{
+  float: left;
+  width: 322px;
+}
+#footer{
+	display: block;
+}
+
+#company-name {
+	margin-top: 0px;
+	text-align: center;
+	margin-right: 0px;
+	padding-top: 0px 0px 0px;
+	font-family:"Lucida Grande","Arial", Tahoma, sans-serif;
+	letter-spacing:.01em
+}
+
+#field-sep{
+	padding-left: 5px;
+}

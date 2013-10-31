@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+table 
+{
+	border-collapse:collapse;
+	border-style:solid;
+	//left: 45%;
+	position:right;
+	//.top: 15%;
+}
+
+td 
+{
+	padding-top:8px; 
+	padding-bottom:8px; 
+	padding-left:10px; 
+	padding-right:10px;
+}
+
+th 
+{
+	padding-top:8px; 
+	padding-bottom:8px; 
+	padding-left: 10px;
+}
+
+.tdOne 
+{
+	border-right:none; 
+	border-bottom:none; 
+	border-top:none;
+}
+
+.tdTwo 
+{
+	border-left:none; 
+	border-bottom:none; 
+	border-top:none;
+}
+
+.leftLogo
+{
+	font-size:20px;
+	background-color:#f0a64e;
+	border-bottom-style:none; 
+	color:#7c2f97;
+	text-align:right;
+	width: 100px;
+}
+
+.rightLogo
+{
+	font-size:20px;
+	background-color:#7c2f97;
+	border-bottom-style:none; 
+	color:#f0a64e;
+	padding-left: 0px;
+	text-align:left;
+	width: 100px; 
+}
+
+.error
+{
+	text-align:center;
+	color:#FF0000;
+	font-size:large;
+	font-weight:bold;
+	font-style:italic;
+}

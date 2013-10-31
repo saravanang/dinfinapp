@@ -1,0 +1,103 @@
+@CHARSET "ISO-8859-1";
+
+.form-label{
+	font-family:"Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+	letter-spacing:.01em
+}
+
+form ul {
+    list-style-type: none;
+    //border: 2px solid #83af0e;
+}
+
+form li {
+	margin:0;
+	padding:6px 1% 6px 1%;
+	clear:both;
+	background-color:transparent;
+	position:relative;
+	-webkit-transition:background-color 350ms ease-out;
+	-moz-transition:background-color 350ms ease-out;
+	-o-transition:background-color 350ms ease-out;
+	transition:background-color 350ms ease-out;
+	
+}
+form li span{margin:0 .3em 0 0;padding:0;float:left;color:#444}
+
+
+label.desc,legend.desc{
+	font-size:95%;
+	font-weight:bold;
+	color:#222;
+	line-height:150%;
+	margin:0;
+	padding:0 0 3px 0;
+	border:none;
+	display:block;
+	white-space:normal;
+	width: auto;
+}
+
+span.sep {
+	padding-left:10px;
+}
+
+#entry_form li.rule_hide {
+	display:none !important
+}
+#entry_form li.hide,#entry_form li.cloak div{
+	display:block !important
+}
+.tooltip{
+	font-size:11px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#4a72a4 !important
+}
+
+form li div label,form li span label{
+	margin:0;
+	padding-top:1px;
+	clear:both;
+	font-size:90%;
+	line-height:160%;
+	color:#444;
+	display:block;
+}
+
+form li.focused {
+    background-color: rgb(255, 247, 192);
+}
+
+input.text,input.search,input.file,textarea.textarea,select.select{
+	font-family:"Lucida Grande", Tahoma, Arial, sans-serif;
+	font-size:100%;
+	color:#333;
+	margin:0;
+	padding:2px 0;
+}
+
+legend.font {
+	color: #16256C;
+	font-size:14px;
+}
+
+form li.buttons{
+	width:auto !important;
+	position:relative;
+	clear:both;
+	padding: 0px 1% 0px 1%;
+	margin-top: -30px;
+	float:right
+}
+
+form li.buttons.bot {
+	margin: 0px;
+}
+
+form li.buttons input{
+	font-size:100%;
+	//margin-right:5px
+}
+
+buttons .marker{position:absolute;top:0;right:0;padding:15px 10px 0 0;color:#000;width:auto}button.link{display:inline-block;border:none;background:none;color:blue;text-decoration:underline;cursor:pointer;padding:0;font-size:100%}button.link:hover{color:green}.
